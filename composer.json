@@ -1,0 +1,26 @@
+{
+    "name": "enzolutions/tinto-theme",
+    "type": "spress-theme",
+    "description": "Tinto theme for Spress",
+    "keywords": ["html5", "css3", "responsive", "template", "spress"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "enzo - Eduardo Garcia",
+            "email": "enzo@enzolutions.com",
+            "homepage": "http://enzolutions.com"
+        }
+    ],
+    "require": {
+        "yosymfony/spress-installer": "1.1.*@dev"
+    },
+    "config": {
+        "vendor-dir": "_plugins/vendors"
+    },
+    "extra": {
+        "spress_name": "tinto",
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

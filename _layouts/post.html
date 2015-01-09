@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% block image_feature %}
+  {% include 'image_feature.html' %}
+{% endblock %}
+
+{% block content %}
+<article class="post">
+  <div class="headline-wrap">
+    {% if page.link %}
+      <h1><a href="{{ site.url }}/{{ page.url }}">{{ page.title }}</a></h1>
+    {% else %}
+      <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+    {% endif %}
+  </div><!--/ .headline-wrap -->
+  <div class="article-wrap">
+    {% include 'social_share.html' %}
+
+    {{ page.content }}
+    <hr />
+    <footer role="contentinfo">
+      {% if page.date %}
+      <p class="byline">Published on <time datetime="{{ page.date }}">{{ page.date }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified }}">{{ page.modified }}</time>{% endif %}.</p>
+      {% endif %}
+
+      {% if page.categories | length > 0 or page.tags | length > 0 %}
+        <ul class="list-unstyled">
+            {% if page.tags | length > 0 %}
+                <li>
+                    <i class="fa fa-tags"></i>
+                    {{ page.tags | join(', ') }}
+                </li>
+            {% endif %}
+            {% if page.categories | length > 0 %}
+                <li>
+                    <i class="fa fa-folder"></i>
+                    {{ page.categories | join(', ') }}
+                </li>
+            {% endif %}
+        </ul>
+      {% endif %}
+    </footer>
+  </div><!-- /.article-wrap -->
+  {% include 'disqus_comments.html' %}
+</article>
+{% endblock %}

@@ -1,0 +1,69 @@
+title: "Welcome to Spress"
+name: "Spress blog"
+description: "A site creted by Spress"
+logo: tinto-logo.png
+image:
+    feature: assets/images/sample-image-1.jpg
+    creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+    credit: WeGraphics
+
+
+# Your site's domain. E.g: http://yoursite.com
+url: http://localhost:4000
+
+# Comments in posts
+comments:
+    enabled: true
+    disqus_shortname:
+
+# Information about author
+author:
+    name: Juan Valdez
+    bio_photo: assets/images/bio-juan-valdez.jpg
+
+    # Social networks
+    twitter: spress_cms
+    github: spress/Spress
+    bitbucket:
+    facebook:
+    linkedin:
+    gplus:
+    youtube:
+    instagran:
+
+# Configure your brand
+brand:
+    slogan: 'Tinto is my motto'
+
+# RSS feed
+feed:
+    max_item: 10
+
+# Facebook Open Graph
+open_graph:
+    locale: en_US
+    type: article
+
+# Code highlight for <pre> and <code> tags
+# Powered by http://highlightjs.org/
+code_highlight: true
+
+# Site validation
+google_verify:
+bing_verify:
+
+# Menus
+menu:
+    top:
+       - { name: "Home", url: / }
+       - { name: "About", url: /about }
+    bottom:
+       - { name: "Spress add-ons", url: http://spress.yosymfony.com/add-ons , target: '_blank'}
+       - { name: "Spress Docs", url: http://spress.yosymfony.com/docs, target: '_blank' }
+
+bottom_menu:
+    - { name: Go to Tinto theme web, url: https://github.com/enzoltions/Spress-theme-tinto }
+
+paginate: 5
+
+exclude: ['README.md', 'LICENSE','composer.json']

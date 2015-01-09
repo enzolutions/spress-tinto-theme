@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{% block content %}
+  <h3><a href="{{ site.url }}/posts/">Recent Posts</a></h3>
+  {% include "posts-list.html" with { posts: site.posts } %}
+{% endblock %}

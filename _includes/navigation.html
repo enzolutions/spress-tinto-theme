@@ -1,0 +1,17 @@
+<div class="navigation-wrapper">
+  <div class="site-name">
+    <a href="{{ site.url }}">{{ site.name }}</a>
+  </div><!-- /.site-name -->
+  <div class="top-navigation">
+    {% if site.menu.top | length > 0 %}
+      <ul class="{{ ul_style | default('inline') }}">
+          {% for link in site.menu.top %}
+          <li>
+            <a href="{% if link.url == true %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.target %}target="{ link.target }"{% endif %} >
+              {{ link.name }}</a>
+          </li>
+          {% endfor %}
+      </ul>
+    {% endif %}
+  </div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->

@@ -1,0 +1,8 @@
+{% if posts | length > 0 %}
+  {% for post in posts %}
+    <article>
+        <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p>{{ post.teaser }} ...</p>
+    </article>
+  {% endfor %}
+{% endif %}
