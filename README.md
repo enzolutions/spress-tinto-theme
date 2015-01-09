@@ -22,7 +22,7 @@ Go to your [Spress](http://spress.yosymfony.com/) installation folder i.e  **~/S
 
 ```
 "require": {
-    "spress-add-ons/tinto-theme": "~1.0-dev"
+    "enzolutions/spress-tinto-theme": "~1.0-dev"
 }
 ```
 
@@ -48,15 +48,18 @@ Spresso support top and bottom menus. To configure, you can edit
 `top_menu` and `bottom_menu` options from the `config.yml`:
 
 ```yaml
-top_menu:
-    - { name: Home, url: / }
-    - { name: About, url: /about }
-
-    # To generate a absolute URL using site.url value:
-    - { name: Docs, url: /docs, site_url: true}
+# Menus
+menu:
+    top:
+       - { name: "Home", url: / }
+       - { name: "About", url: /about }
+    bottom:
+       - { name: "Spress add-ons", url: http://spress.yosymfony.com/add-ons , target: '_blank'}
+       - { name: "Spress Docs", url: http://spress.yosymfony.com/docs, target: '_blank' }
 
 bottom_menu:
-    - { name: Your link, url: https://your-url }
+    - { name: Go to Tinto theme web, url: https://github.com/enzoltions/Spress-theme-tinto }
+
 ```
 
 #### Comments
