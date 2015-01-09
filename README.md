@@ -25,7 +25,7 @@ Go to your [Spress](http://spress.yosymfony.com/) installation folder i.e  **~/S
 
 ```
 "require": {
-    "enzolutions/spress-tinto-theme": "~1.0-dev"
+    "enzolutions/spress-tinto-theme": "1.0.*@dev"
 }
 ```
 
