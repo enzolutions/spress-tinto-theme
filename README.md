@@ -1,7 +1,10 @@
 ## Tinto theme for Spress
 
 Tinto is a ported theme to Spress design by [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
-[Live demo](https://mmistakes.github.io/minimal-mistakes/).
+
+![Spress Tinto](https://raw.githubusercontent.com/enzolutions/spress-tinto-theme/master/assets/images/spress_tinto.png)
+
+[Live demo](http://enzolutions.com/)
 
 ### License
 Free for personal and commercial use under the [MIT license](http://opensource.org/licenses/MIT)
