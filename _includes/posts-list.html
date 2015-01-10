@@ -2,7 +2,9 @@
   {% for post in posts %}
     <article>
         <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p>{{ post.teaser }} ...</p>
+        {% if post.teaser %}
+          <p>{{ post.teaser }} ...</p>
+        {% endif %}
     </article>
   {% endfor %}
 {% endif %}

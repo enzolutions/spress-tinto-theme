@@ -1,4 +1,18 @@
-## Tinto theme for Spress
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Tinto theme for [Spress](http://spress.yosymfony.com)](#tinto-theme-for-spresshttpspressyosymfonycom)
+  - [License](#license)
+  - [Featured:](#featured)
+  - [How to install?](#how-to-install)
+  - [How to use?](#how-to-use)
+    - [Menus](#menus)
+    - [Comments](#comments)
+  - [How to update your current theme to Tinto Theme?](#how-to-update-your-current-theme-to-tinto-theme)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Tinto theme for [Spress](http://spress.yosymfony.com)
 
 Tinto is a ported theme to Spress design by [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
 
@@ -45,6 +59,7 @@ $ cd /your-site-dir tinto
 $ spress site:build --server --watch
 ```
 
+
 #### Menus
 
 Spresso support top and bottom menus. To configure, you can edit
@@ -80,3 +95,12 @@ the `comments` variable to `false` at the Front-matter of the post:
 comments: false
 ---
 ```
+### How to update your current theme to Tinto Theme?
+
+If you are already using Spress and you want to update to this theme follow these simple steps
+
+* Create a new site (explained above)
+* Copy your _post folder your new spress site
+* Copy your assets folder to you new spress site
+* Merge your config.yml file with config.yml file of your new spress site
+* Enjoy
