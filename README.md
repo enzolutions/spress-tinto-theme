@@ -16,7 +16,7 @@
 
 Tinto is a ported theme to **[Spress 2.0](http://spress.yosymfony.com)**  design by [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
 
-![Spress Tinto](https://raw.githubusercontent.com/enzolutions/spress-tinto-theme/master/assets/images/spress_tinto.png)
+![Spress Tinto](https://raw.githubusercontent.com/enzolutions/spress-tinto-theme/master/src/content/assets/images/spress_tinto.png)
 
 [Live demo](http://enzolutions.com/)
 
