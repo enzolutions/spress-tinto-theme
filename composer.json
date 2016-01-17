@@ -11,9 +11,6 @@
             "homepage": "http://enzolutions.com"
         }
     ],
-    "require": {
-        "yosymfony/spress-installer": "2.0.*@dev"
-    },
     "config": {
         "vendor-dir": "_plugins/vendors"
     },
