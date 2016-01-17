@@ -35,19 +35,7 @@ Free for personal and commercial use under the [MIT license](http://opensource.o
 
 ### How to install?
 
-Go to your [Spress](http://spress.yosymfony.com/) installation folder i.e  **~/Spress** and add the following depencency to your `composer.json` file
-
-```
-"require": {
-    "enzolutions/spress-tinto-theme": "2.0.*@dev"
-}
-```
-
-and then run the following command to install the dependency.
-
-```
-$ composer update
-```
+This theme is not included with Spress.
 
 ### How to use?
 
