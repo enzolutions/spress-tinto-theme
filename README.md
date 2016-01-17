@@ -37,16 +37,17 @@ Free for personal and commercial use under the [MIT license](http://opensource.o
 
 This theme is not included with Spress.
 
-### How to use?
-
-**Create a new site**:
+Download the latest release from releases page https://github.com/enzolutions/spress-tinto-theme/releases i.e
 
 ```bash
-$ spress site:new /your-site-dir tinto
-$ cd /your-site-dir tinto
+$ wget https://github.com/enzolutions/spress-tinto-theme/archive/2.0.0.tar.gz -O tinto.tar.gz
+$ tar zcvf tinto.tar.gz
+$ mv spress-tinto-theme-2.0.0 myproject
+$ cd myproject
 $ spress site:build --server --watch
 ```
 
+### How to use?
 
 #### Menus
 
