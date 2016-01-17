@@ -1,12 +1,14 @@
 ---
 layout: default
+image:
+  feature: "assets/images/enzolutions_image_header.png"
+  creditlink: "http://cr.linkedin.com/pub/werner-gomez/31/ba8/9b6"
+  credit: "Yersika Ferreira"
 ---
 
-{% block image_feature %}
-  {% include 'image_feature.html' %}
-{% endblock %}
-
 {% block content %}
+{# page.my_name #}
+{# dump(page.image) #}
 <article class="post">
   <div class="headline-wrap">
     {% if page.link %}
@@ -21,22 +23,22 @@ layout: default
     {{ page.content }}
     <hr />
     <footer role="contentinfo">
-      {% if page.date %}
-      <p class="byline">Published on <time datetime="{{ page.date }}">{{ page.date }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified }}">{{ page.modified }}</time>{% endif %}.</p>
-      {% endif %}
-
       {% if page.categories | length > 0 or page.tags | length > 0 %}
         <ul class="list-unstyled">
             {% if page.tags | length > 0 %}
                 <li>
                     <i class="fa fa-tags"></i>
-                    {{ page.tags | join(', ') }}
+                    {% for tag, url in page.terms_url.tags %}
+                    <a href="{{ site.url }}{{ url }}">{{ tag }}</a>{% if loop.last == false %},{% endif %}
+                    {% endfor %}
                 </li>
             {% endif %}
             {% if page.categories | length > 0 %}
                 <li>
                     <i class="fa fa-folder"></i>
-                    {{ page.categories | join(', ') }}
+                    {% for category, url in page.terms_url.categories %}
+                    <a href="{{ site.url }}{{ url }}">{{ category }}</a>{% if loop.last == false %},{% endif %}
+                    {% endfor %}
                 </li>
             {% endif %}
         </ul>

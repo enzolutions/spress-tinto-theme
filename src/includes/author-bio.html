@@ -3,12 +3,19 @@
 <h3>{{ site.author.name }}</h3>
 <p>{{ site.brand.slogan}}</p>
 
+<p> <a href="http://en.wikipedia.org/wiki/Costa_Rica" target="_blank"><img class="alignleft" src="{{ site.url }}/assets/img/flags/cr.png" /></a> Current location</p>
+
+
 {% if author.twitter %}
 <a href="http://twitter.com/{{ author.twitter }}" class="author-social" target="_blank"><i class="fa fa-fw fa-twitter-square"></i> Twitter</a>
 {% endif %}
 
 {% if author.facebook %}
 <a href="http://facebook.com/{{ author.facebook }}" class="author-social" target="_blank"><i class="fa fa-fw fa-facebook-square"></i> Facebook</a>
+{% endif %}
+
+{% if author.qq %}
+<a href="http://wpa.qq.com/msgrd?v=3&uin={{ author.qq }}&site=qq&menu=yes" class="author-social" target="_blank"><i class="fa fa-fw fa-qq"></i> &nbsp;QQ交谈</a>
 {% endif %}
 
 {% if author.gplus %}

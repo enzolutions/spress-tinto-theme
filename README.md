@@ -14,7 +14,7 @@
 
 ## Tinto theme for [Spress](http://spress.yosymfony.com)
 
-Tinto is a ported theme to Spress design by [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
+Tinto is a ported theme to **[Spress 2.0](http://spress.yosymfony.com)**  design by [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes).
 
 ![Spress Tinto](https://raw.githubusercontent.com/enzolutions/spress-tinto-theme/master/assets/images/spress_tinto.png)
 
@@ -39,7 +39,7 @@ Go to your [Spress](http://spress.yosymfony.com/) installation folder i.e  **~/S
 
 ```
 "require": {
-    "enzolutions/spress-tinto-theme": "1.0.*@dev"
+    "enzolutions/spress-tinto-theme": "2.0.*@dev"
 }
 ```
 

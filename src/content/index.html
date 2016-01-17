@@ -1,0 +1,17 @@
+---
+layout: default
+title: "Blog posts"
+generator: "pagination"
+provider: "site.posts"
+max_page: 7
+sort_by: "date"
+---
+{% block content %}
+  <div id="index">
+    <h3><a href="{{ site.url }}/posts/">Recent Posts</a></h3>
+    {% for post in page.pagination.items %}
+    <article><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></article>
+    {% endfor %}
+    {% include "paginator.html" %}
+</div>
+{% endblock %}

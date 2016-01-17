@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Sample post"
-subtitle: "This is a subtitle for this post"
-categories: [posts]
-tags: [sample]
-teaser: "Below is just about everything you'll need to style in the theme"
+title: Sample Post
+description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+categories: [articles]
+tags: [sample post, posts]
+draft: true
 ---
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
@@ -60,12 +60,14 @@ HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a a
 
 ## Code Snippets
 
-```
-$a = 'your text';
-$a .= ' and more';
-```
+Syntax highlighting via [Highlight.js](http://highlightjs.org/):
+
+    <div id="awesome">
+        <p>This is great isn't it?</p>
+    </div>
 
 ## Buttons
 
-<input type="submit" value="Send" />
-<input type="reset" value="Reset" class="alt" />
+Make any link standout more when applying the `.btn` and `.btn-default` classes.
+
+<div><a href="#" class="btn btn-default">This is a button</a></div>
