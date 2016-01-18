@@ -11,9 +11,6 @@
             "homepage": "http://enzolutions.com"
         }
     ],
-    "config": {
-        "vendor-dir": "_plugins/vendors"
-    },
     "extra": {
         "spress_name": "tinto",
         "branch-alias": {
