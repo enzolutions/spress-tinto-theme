@@ -12,7 +12,6 @@
         }
     ],
     "extra": {
-        "spress_name": "tinto",
         "branch-alias": {
             "dev-master": "2.0.x-dev"
         }
