@@ -2392,6 +2392,16 @@ body {
     }
 }
 
+@media only screen and (min-width:62em) {
+    .footer-wrap footer {
+        display: inline;
+        float: left;
+        width: 50%;
+        margin-left: 20.33333%;
+        margin-right: 25%
+    }
+}
+
 @media only screen and (min-width:92em) {
     .footer-wrap footer {
         display: inline;
